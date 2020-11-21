@@ -91,7 +91,10 @@ def detect_cv2(cfgfile, weightfile, imgfiles, namesfile):
     end_time = time.time()
     print(time.ctime())
     print(end_time, start_time)
-    print('number of predicts: {}, fps: {}'.format(len(submit_results), len(submit_results)/(end_time-start_time)))
+    print('number of predicts: {}, fps: {}, speed: {} ms per image'.format(
+        len(submit_results),
+        len(submit_results)/(end_time-start_time),
+        (end_time-start_time)*1000/len(submit_results)))
 
     print('output results for submission: {}'.format('submission.json'))
     with open('submission.json', 'w') as outfile:
