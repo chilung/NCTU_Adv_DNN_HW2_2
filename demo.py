@@ -71,9 +71,7 @@ def detect_cv2(cfgfile, weightfile, imgfiles, namesfile):
         img_height, img_width, _ = img.shape
 
         predict = do_detect(m, sized, 0.2, 0.6, use_cuda)[0]
-        if idx%100 == 0:
-            # print('predicting img progress: {} of {}'.format(idx, len(filelist)))
-            pbar.update(idx+1)
+        pbar.update(1)
 
         result = {}
         result['bbox'] = [
