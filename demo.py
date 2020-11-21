@@ -20,7 +20,7 @@ import time
 import datetime
 import json
 import numpy as np
-from progressbar import *
+from tqdm import tqdm
 
 """hyper parameters"""
 use_cuda = True
@@ -61,7 +61,7 @@ def detect_cv2(cfgfile, weightfile, imgfiles, namesfile):
     start_time = time.time()
 
     submit_results = []
-    pbar = ProgressBar().start()
+    pbar = tqdm(total=100)
     
     for idx, imgfile in enumerate(filelist):
         # print(imgfile)
