@@ -69,7 +69,7 @@ def detect_cv2(cfgfile, weightfile, imgfiles, namesfile):
 
         predict = do_detect(m, sized, 0.2, 0.6, use_cuda)[0]
         if idx%100 == 0:
-            print('predict img proceed: {} of {}'.format(idx, len(filelist)))
+            print('predicting img progress: {} of {}'.format(idx, len(filelist)))
 
         result = {}
         result['bbox'] = [
