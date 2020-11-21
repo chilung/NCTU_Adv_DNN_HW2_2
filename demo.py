@@ -61,7 +61,7 @@ def detect_cv2(cfgfile, weightfile, imgfiles, namesfile):
     start_time = time.time()
 
     submit_results = []
-    pbar = tqdm(total=100)
+    pbar = tqdm(total=len(filelist))
     
     for idx, imgfile in enumerate(filelist):
         # print(imgfile)
@@ -73,7 +73,7 @@ def detect_cv2(cfgfile, weightfile, imgfiles, namesfile):
         predict = do_detect(m, sized, 0.2, 0.6, use_cuda)[0]
         if idx%100 == 0:
             # print('predicting img progress: {} of {}'.format(idx, len(filelist)))
-            pbar.update(int((idx/(len(filelist)-1))*100))
+            pbar.update(idx+1)
 
         result = {}
         result['bbox'] = [
