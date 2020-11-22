@@ -1,6 +1,13 @@
 ## Environment preparation
-conda install -c conda-forge argparse
-conda install -c conda-forge tqdm
+dependent package:
+argparse
+tqdm
+cv2
+json
+numpy
+tqdm
+
+
 ## Model conversion
 In order to convert the weights from darknet to pytorch, you need to prepare some thing:
 1. git clone this repository into your local environment.
