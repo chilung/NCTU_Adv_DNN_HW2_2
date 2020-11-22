@@ -7,6 +7,7 @@ json
 numpy
 tqdm
 pytorch
+
 </code></pre>
 ## Model conversion
 In order to convert the weights from darknet to pytorch, you need to prepare some thing:
