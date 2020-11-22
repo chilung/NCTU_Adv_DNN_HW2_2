@@ -4,11 +4,7 @@ dependent package:
 tqdm
 cv2
 json
-numpy
-tqdm
 pytorch
-itertools
-struct
 </code></pre>
 ## Model conversion
 In order to convert the weights from darknet to pytorch, you need to prepare some thing:
