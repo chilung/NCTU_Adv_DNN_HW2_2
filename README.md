@@ -16,4 +16,4 @@ python demo.py -cfgfile='./exec_env/yolo-obj.cfg' -weightfile='./exec_env/yolo-o
 
 In Windows:
 
-python demo.py -cfgfile=".\exec_env\yolo-obj.cfg" -weightfile=".\exec_env\yolo-obj_mAP_93.6.weights" -imgfiles='.\exec_env\valid.txt' -namesfile='.\exec_env\obj.names'
+python demo.py -cfgfile=".\exec_env\yolo-obj.cfg" -weightfile=".\exec_env\yolo-obj_mAP_93.6.weights" -imgfiles=".\exec_env\valid.txt" -namesfile=".\exec_env\obj.names"
