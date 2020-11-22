@@ -116,7 +116,7 @@ def get_args():
     #                 '-weightfile', './exec_env/yolo-obj-mAP_93.3.weights',
     #                 '-imgfiles', './exec_env/valid.txt',
     #                 '-namesfile', './exec_env/obj.names'])
-    print(args)
+    # print(args)
     # args = parser.parse_args()
 
     return args
