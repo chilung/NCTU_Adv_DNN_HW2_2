@@ -117,7 +117,7 @@ def get_args():
     #                 '-imgfiles', './exec_env/valid.txt',
     #                 '-namesfile', './exec_env/obj.names'])
     # print(args)
-    # args = parser.parse_args()
+    args = parser.parse_args()
 
     return args
 
