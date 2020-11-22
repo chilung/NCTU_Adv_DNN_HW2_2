@@ -112,10 +112,10 @@ def get_args():
     parser.add_argument('-namesfile', type=str,
                         default='./exec_env/obj.names',
                         help='path of your name file.', dest='namesfile')
-    args = parser.parse_args(args=['-cfgfile', './exec_env/yolo-obj.cfg',
-                    '-weightfile', './exec_env/yolo-obj-mAP_93.3.weights',
-                    '-imgfiles', './exec_env/valid.txt',
-                    '-namesfile', './exec_env/obj.names'])
+    # args = parser.parse_args(args=['-cfgfile', './exec_env/yolo-obj.cfg',
+    #                 '-weightfile', './exec_env/yolo-obj-mAP_93.3.weights',
+    #                 '-imgfiles', './exec_env/valid.txt',
+    #                 '-namesfile', './exec_env/obj.names'])
     print(args)
     # args = parser.parse_args()
 
